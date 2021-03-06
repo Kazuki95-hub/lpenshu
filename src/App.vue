@@ -99,7 +99,7 @@
       <div class="top-blog-list">
         <article class="top-blog-item">
           <a href="#" class="top-blog-item-thumbnail">
-            <img src="img/blog.png" alt="会社を創業した理由" />
+            <img src="./assets/img/blog.png" alt="会社を創業した理由" />
           </a>
           <p class="top-blog-item-date">2019/07/17</p>
           <h3 class="top-blog-item-ttl">
@@ -108,7 +108,7 @@
         </article>
         <article class="top-blog-item">
           <a href="#" class="top-blog-item-thumbnail">
-            <img src="img/blog.png" alt="ITエンジニアを育成する最強メソッド" />
+            <img src="./assets/img/blog.png" alt="ITエンジニアを育成する最強メソッド" />
           </a>
           <div class="top-blog-item-info">
             <p class="top-blog-item-date">2019/11/11</p>
@@ -119,7 +119,7 @@
         </article>
         <article class="top-blog-item">
           <a href="#" class="top-blog-item-thumbnail">
-            <img src="img/blog.png" alt="コーチングによるモチベーション向上理論" />
+            <img src="./assets/img/blog.png" alt="コーチングによるモチベーション向上理論" />
           </a>
           <p class="top-blog-item-date">2020/08/01</p>
           <h3 class="top-blog-item-ttl">
@@ -147,6 +147,15 @@
       <!-- top-recruit end -->
     </div>
   </main>
+  <section class="bottom-contact ptb-m">
+    <div class="wrap">
+      <h2 class="bottom-contact-ttl ttl">お問い合わせ</h2>
+      <p class="bottom-contact-txt">
+        お仕事のご依頼や採用に関してはお問い合わせにて承っております。
+      </p>
+      <a href="contact.html" class="bottom-contact-btn btn btn-primary">お問い合わせ</a>
+    </div>
+  </section>
     <CommonFooter></CommonFooter>
   </div>
 </template>
@@ -281,11 +290,11 @@ input, select {
 .top-feature{
   color: #fff;
   background-color: #222;
-  height: 300px;
 }
 
 .top-feature-txt{
   margin-top: 20px;
+  line-height: 20px;
 }
 
 .top-service-ttl{
@@ -435,4 +444,185 @@ input, select {
     margin-right: 0;
   }
 }
+
+.bottom-contact {
+  background-color: #f5f6f9;
+  text-align: center;
+}
+
+.bottom-contact-txt {
+  margin-top: 10px;
+}
+
+.bottom-contact-btn {
+  margin: 40px auto 0;
+}
+
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.wrap-s {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.ptb-m {
+  padding: 80px 0;
+}
+
+.btn {
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #cd0224;
+  color: #fff;
+}
+
+.ttl {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.page-mv {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: url("./assets/img/common/mv.png") center / cover;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+
+  .wrap-s {
+    width: 90%;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  .menu-line-top,
+  .menu-line-middle,
+  .menu-line-bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .menu-line-top {
+    top: 0;
+  }
+
+  .menu-line-middle {
+    top: 14px;
+  }
+
+  .menu-line-bottom {
+    bottom: 0;
+  }
+
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+
+  .drawer-nav{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: .7s;
+  }
+
+  .drawer-nav-list {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .drawer-nav-item {
+    margin-top: 40px;
+    color: #0033cc;
+    font-size: 18px;
+  }
+
+  .in {
+    transform: translateX(100%);
+  }
+
+  .footer-copyright {
+    margin: 0 auto;
+  }
+
+  .footer-nav-item {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer-nav-item:after {
+    display: none;
+  }
+}
+
 </style>
+

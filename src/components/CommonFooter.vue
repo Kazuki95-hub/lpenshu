@@ -18,64 +18,6 @@
 </template>
 
 <style scoped>
-
-@charset "UTF-8";
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
-    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: 0.3s;
-}
-
-a:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-.wrap {
-  width: 1080px;
-  margin: 0 auto;
-}
-
-.wrap-s {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.ptb-m {
-  padding: 80px 0;
-}
-
-.btn {
-  display: block;
-  width: 300px;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  background-color: #cd0224;
-  color: #fff;
-}
-
-.ttl {
-  font-size: 30px;
-  font-weight: bold;
-}
-
 .footer {
   padding: 20px 0;
   color: #fff;
