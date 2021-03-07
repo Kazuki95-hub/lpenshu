@@ -156,10 +156,11 @@ export default {
     width: 100%;
     text-align: left;
   }
-  .drawer-nav-list.open {
+  .drawer-nav {
     left: 0;
+    /* right:0; */
   }
-  .drawer-nav-list{
+  .drawer-nav{
     display: block;
 }
 }
