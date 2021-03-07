@@ -44,7 +44,7 @@ export default {
     },
     methods:{
         hamburger() {
-            this.isClass = !this.isClass
+            this.isClass = !this.isClass;
         }
     }
 };
@@ -77,10 +77,6 @@ export default {
 
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.menu {
-  display: none;
 }
 
 .drawer-nav {
@@ -147,14 +143,8 @@ export default {
     box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
     z-index: 999;
   }
-  /* .menu-content .menu-title {
-    margin: 40px 20px;
-    font-size: 2.2rem;
-    color: #333333;
-    text-align: left;
-    font-weight: bold;
-  } */
-  .menu-content li a {
+
+  .drawer-nav-list li a {
     color: #333333;
     margin: 15px;
     padding: 5px;
@@ -162,12 +152,15 @@ export default {
     text-decoration: none;
     display: block;
   }
-  .menu-content li {
+  .drawer-nav-list li {
     width: 100%;
     text-align: left;
   }
-  .menu-content.open {
+  .drawer-nav-list.open {
     left: 0;
   }
+  .drawer-nav-list{
+    display: block;
+}
 }
 </style>
