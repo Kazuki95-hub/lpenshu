@@ -93,6 +93,8 @@ export default {
     top: 15px;
     right: 20px;
     transition: 0.4s;
+    z-index: 999;
+    font-weight: bold;
   }
   #menu span {
     position: absolute;
@@ -102,6 +104,7 @@ export default {
     height: 2px;
     background-color: black;
     transition: 0.8s;
+    z-index:999;
   }
   #menu span:nth-of-type(1) {
     top: 10px;
@@ -129,39 +132,39 @@ export default {
     top: 20px;
     transform: rotate(-45deg);
   }
-  .drawer-nav-list {
+  .drawer-nav {
     display: block;
-    width: calc(100% - 80px);
+    width: 100%;
     height: 100%;
     text-align: center;
-    transition: 0.2s;
+    transition: 0.8s;
     position: fixed;
     top: 0;
     left: calc(-100% - 80px);
     background: white;
     color: #333333;
     box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
-    z-index: 999;
+    z-index: 998;
   }
 
   .drawer-nav-list li a {
-    color: #333333;
+    color: blue;
     margin: 15px;
     padding: 5px;
-    border-bottom: 0.5px solid #2662d5;
     text-decoration: none;
     display: block;
   }
   .drawer-nav-list li {
     width: 100%;
-    text-align: left;
+    text-align: center;
+    z-index:998;
   }
-  .drawer-nav {
+  .drawer-nav.open {
     left: 0;
-    /* right:0; */
   }
   .drawer-nav{
     display: block;
+    
 }
 }
 </style>
